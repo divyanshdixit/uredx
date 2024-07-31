@@ -1,0 +1,26 @@
+.content_link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.2rem;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    rgb(3, 251, 185),
+    rgb(28, 145, 255)
+  );
+  transition: 0.4s;
+}
+@keyframes border {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.content_link:hover::after {
+  animation: border 0.4s ease-in-out forwards;
+}

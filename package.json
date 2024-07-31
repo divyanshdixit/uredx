@@ -1,0 +1,17 @@
+{
+  "name": "v",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start":"yarn workspace backend start & yarn workspace frontend dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "private":true,
+  "workspaces":[
+    "frontend",
+    "backend"
+  ]
+}
