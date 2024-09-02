@@ -88,17 +88,17 @@ export default function Page3card() {
         {card.map((data, index) => (
           <div
             key={index}
-            className=" h-[250px]  relative rounded-lg overflow-hidden  bg-slate-50 dark:bg-zinc-800  shadow-slate-400 border-2 border-gray-300  transform transition duration-500 hover:scale-90   justify-center items-center flex cursor-pointer"
+            className=" h-[250px]  relative rounded-lg overflow-hidden  bg-slate-50   shadow-slate-400 border-2 border-gray-300  transform transition duration-500 hover:scale-90   justify-center items-center flex cursor-pointer"
           >
             <div className=" ">
               <div className=" h-20 w-20  mt-8 items-center mx-auto justify-center">
                 <img src={data.img} alt="icon" />
               </div>
-              <div className=" text-center xl:mt-8 sm:mt-2 mt-0 text-blue-950 dark:text-white  text-[20px] font-semibold">
+              <div className=" text-center xl:mt-8 sm:mt-2 mt-0 text-blue-950   text-[20px] font-semibold">
                 <h1>{data.title}</h1>
               </div>
 
-              <div className=" my-4 border-2 xl:mx-20  md:lg-20 mx-20 p-2 rounded-lg  font-medium flex gap-5 justify-center items-center text-textcolor dark:text-white   ">
+              <div className=" my-4 border-2 xl:mx-20  md:lg-20 mx-20 p-2 rounded-lg  font-medium flex gap-5 justify-center items-center text-textcolor    ">
                 <p>{data.subtitle}</p>
                 {data.icon}
               </div>

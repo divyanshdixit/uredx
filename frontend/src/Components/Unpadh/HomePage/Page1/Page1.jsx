@@ -12,7 +12,7 @@ export default function Page1() {
   }, []);
   return (
     <>
-      <div className="h-[750px] md:h-[580px]  bg-background dark:bg-zinc-800">
+      <div className="h-[750px] md:h-[580px]  bg-background ">
         <section className="container flex flex-col items-center justify-between ">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
             {/* text container  */}
@@ -39,12 +39,12 @@ export default function Page1() {
                 <form className=" mx-auto">
                   <label
                     htmlFor="default-search"
-                    className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                    className="mb-2 text-sm font-medium text-gray-900 sr-only "
                   ></label>
                   <div className="relative">
                     <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                       <svg
-                        className="w-4 h-4 text-gray-500 dark:text-gray-400"
+                        className="w-4 h-4 text-gray-500 "
                         aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -70,7 +70,7 @@ export default function Page1() {
                       type="submit"
                       className="text-white absolute end-2.5 bottom-[9px] 
             
-                      bg-background hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-full text-sm px-6 py-3 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                      bg-background hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-full text-sm px-6 py-3 "
                     >
                       Get started
                     </button>

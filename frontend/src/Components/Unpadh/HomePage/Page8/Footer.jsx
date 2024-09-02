@@ -6,7 +6,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 function Footer() {
   return (
     <>
-      <footer className="bg-teal-200 dark:bg-zinc-800 text-center  lg:text-left ">
+      <footer className="bg-teal-200  text-center  lg:text-left ">
         <div className="flex text-lg items-center justify-center   p-6  lg:justify-end">
           {/* <div className="mr-12 hidden lg:block font-medium">
           <span>Get connected with us on social networks</span>
@@ -128,7 +128,7 @@ function Footer() {
                 alt=""
                 className="dark:hidden mb-4 flex items-center justify-center  md:justify-start"
               />
-              <p className="text-sm font-medium dark:text-gray-200">
+              <p className="text-sm font-medium">
                 Uredx is an open, online marketplace to access online courses
                 where anyone can upload and sell a class. You don’t need to
                 venture far or browse the different websites to get the quality
@@ -137,75 +137,76 @@ function Footer() {
             </div>
             {/* <!-- Links section --> */}
             <div className="">
-              <h6 className="mb-4 text-lg flex justify-center font-semibold uppercase md:justify-start dark:text-background">
-                Important Links
-              </h6>
-              <p className="mb-4 hover:translate-x-1 duration-300">
-                <a className="text-gray-800 hover:translate-x-1 duration-300 cursor-pointer dark:text-blue-600 font-medium">
-                  Business With Uredx
-                </a>
-              </p>
-              <p className="mb-4 hover:translate-x-1 duration-300">
-                <a className="text-gray-800 cursor-pointer hover:translate-x-1 duration-300 dark:text-blue-600 font-medium">
-                  About Us
-                </a>
-              </p>
-              <p className="mb-4 hover:translate-x-1 duration-300">
-                <a className="text-gray-800 cursor-pointer dark:text-blue-600 font-medium">
-                  Contact Us
-                </a>
-              </p>
-            </div>
-            {/* <!-- About links section --> */}
-            <div className="">
-              <h6 className="mb-4 flex dark:text-background text-lg justify-center font-semibold uppercase md:justify-start">
-                About
-              </h6>
-              <p className="mb-4 hover:translate-x-1 duration-300">
-                <a className="text-gray-800 cursor-pointer dark:text-blue-600 font-medium">
-                  Partners
-                </a>
-              </p>
-              <p className="mb-4 hover:translate-x-1 duration-300">
-                <a className="text-gray-800 cursor-pointer dark:text-blue-600 font-medium">
-                  Careers
-                </a>
-              </p>
-              <p className="mb-4 hover:translate-x-1 duration-300">
-                <a className="text-gray-800 cursor-pointer dark:text-blue-600 font-medium">
-                  Press
-                </a>
-              </p>
-              <p className="mb-4 hover:translate-x-1 duration-300">
-                <a className="text-gray-800 cursor-pointer dark:text-blue-600 font-medium">
-                  Community
-                </a>
-              </p>
-            </div>
-            {/* <!-- Contact section --> */}
-            <div>
-              <h6 className="mb-4 flex text-background justify-center font-semibold text-lg uppercase md:justify-start">
-                Our office
-              </h6>
-              <p className="mb-4 hover:translate-x-1 duration-300 flex items-center justify-center text-gray-800 cursor-pointer dark:text-blue-600 font-medium  md:justify-start">
-                <FaHome className="text-4xl mr-2 text-gray-950 cursor-pointer dark:text-blue-600" />
-                1020A El Camino Real, Menlo Park, CA 94025, USA
-              </p>
-              <p className="mb-4 hover:translate-x-1 duration-300 flex items-center cursor-pointer dark:text-blue-600 justify-center md:justify-start">
-                <MdEmail className="text-2xl mr-3 text-gray-950 cursor-pointer dark:text-blue-600 " />
-                uredx@gmail.com
-              </p>
-              <p className="mb-4 hover:translate-x-1 duration-300 flex items-center justify-center cursor-pointer dark:text-blue-600 md:justify-start">
-                <FaPhoneAlt className="text-2xl mr-3 text-gray-950 cursor-pointer dark:text-blue-600" />
-                +91 8810536354
-              </p>
-            </div>
+  <h6 className="mb-4 text-lg flex justify-center font-semibold uppercase md:justify-start text-background">
+    Important Links
+  </h6>
+  <p className="mb-4 hover:translate-x-1 duration-300">
+    <a className="text-gray-800 hover:translate-x-1 duration-300 cursor-pointer font-medium">
+      Business With Uredx
+    </a>
+  </p>
+  <p className="mb-4 hover:translate-x-1 duration-300">
+    <a className="text-gray-800 cursor-pointer hover:translate-x-1 duration-300 font-medium">
+      About Us
+    </a>
+  </p>
+  <p className="mb-4 hover:translate-x-1 duration-300">
+    <a className="text-gray-800 cursor-pointer font-medium">
+      Contact Us
+    </a>
+  </p>
+</div>
+{/* <!-- About links section --> */}
+<div className="">
+  <h6 className="mb-4 flex text-lg justify-center font-semibold uppercase md:justify-start text-background">
+    About
+  </h6>
+  <p className="mb-4 hover:translate-x-1 duration-300">
+    <a className="text-gray-800 cursor-pointer font-medium">
+      Partners
+    </a>
+  </p>
+  <p className="mb-4 hover:translate-x-1 duration-300">
+    <a className="text-gray-800 cursor-pointer font-medium">
+      Careers
+    </a>
+  </p>
+  <p className="mb-4 hover:translate-x-1 duration-300">
+    <a className="text-gray-800 cursor-pointer font-medium">
+      Press
+    </a>
+  </p>
+  <p className="mb-4 hover:translate-x-1 duration-300">
+    <a className="text-gray-800 cursor-pointer font-medium">
+      Community
+    </a>
+  </p>
+</div>
+{/* <!-- Contact section --> */}
+<div>
+  <h6 className="mb-4 flex justify-center font-semibold text-lg uppercase md:justify-start text-background">
+    Our office
+  </h6>
+  <p className="mb-4 hover:translate-x-1 duration-300 flex items-center justify-center text-gray-800 cursor-pointer font-medium md:justify-start">
+    <FaHome className="text-4xl mr-2 text-gray-950 cursor-pointer" />
+    1020A El Camino Real, Menlo Park, CA 94025, USA
+  </p>
+  <p className="mb-4 hover:translate-x-1 duration-300 flex items-center cursor-pointer justify-center md:justify-start">
+    <MdEmail className="text-2xl mr-3 text-gray-950 cursor-pointer" />
+    uredx@gmail.com
+  </p>
+  <p className="mb-4 hover:translate-x-1 duration-300 flex items-center justify-center cursor-pointer md:justify-start">
+    <FaPhoneAlt className="text-2xl mr-3 text-gray-950 cursor-pointer" />
+    +91 8810536354
+  </p>
+</div>
+
           </div>
         </div>
 
         {/* <!--Copyright section--> */}
-        <div className="bg-gray-200 dark:bg-zinc-900 p-6 text-center ">
-          <span className="dark:text-gray-200">© 2024 All Copyright :</span>
+        <div className="bg-gray-200  p-6 text-center ">
+          <span className="">© 2024 All Copyright :</span>
           <a className="font-semibold text-background pl-2 " href="">
             Uredx
           </a>

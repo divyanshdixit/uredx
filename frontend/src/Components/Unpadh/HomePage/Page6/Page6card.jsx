@@ -87,13 +87,13 @@ export default function Page6card() {
         <Slider {...settings}>
           {stuCard.map((data, index) => (
             <div key={index} className=" items-center justify-center mx-auto  ">
-              <div className="  border-2 border-gray-400 dark:border-background bg-slate-200 dark:bg-zinc-800 p-8 rounded-xl ">
+              <div className="  border-2 border-gray-400  bg-slate-200  p-8 rounded-xl ">
                 <img
                   src={data.commaimg}
                   alt="no img"
-                  className="h-8 dark:text-gray-200"
+                  className="h-8 "
                 />
-                <p className="dark:text-gray-200">{data.title}</p>
+                <p className="">{data.title}</p>
 
                 <div className="inline-flex items-center">
                   <img
@@ -102,10 +102,10 @@ export default function Page6card() {
                     alt="icon"
                   />
                   <span className="flex flex-col pl-4">
-                    <span className="font-bold dark:text-gray-200 ">
+                    <span className="font-bold ">
                       {data.subtitle}
                     </span>
-                    <span className="text-sm dark:text-gray-200">
+                    <span className="text-sm ">
                       {data.course}
                     </span>
                   </span>
