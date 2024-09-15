@@ -5,12 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./src/Components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  // darkMode: "class",
   theme: {
+    
     extend: {
+      container: {
+        center: true,
+      },
       colors: {
-        background: "#0BA085",
-        // textcolor: "#000000",
+        background: "#2c949e",
+        textcolor: "#000000",
       },
     },
     screens: {

@@ -37,10 +37,10 @@ export default function Page4() {
       <section className="w-auto h-full box-border mx-auto mt-28 ">
         {/* Title And Subtitle */}
         <div className="text-center">
-          <div className="font-Poppins font-semibold text-3xl dark:text-white">
+          <div className="font-Poppins font-semibold text-3xl text-black">
             <h1>Learn From The Best Courses</h1>
           </div>
-          <div className="font-Poppins text-lg font-medium mt-4 dark:text-white">
+          <div className="font-Poppins text-lg font-medium mt-4 text-black">
             <h1>
               Choose from 10,000 online video courses with new additions
               published every month
@@ -50,14 +50,11 @@ export default function Page4() {
 
         {/* Slider Card */}
         <div className="flex mx-auto justify-around items-center">
-          <div
-            // id="slider"
-            className="mt-5"
-          >
+          <div className="mt-5">
             {/* Buttons for filtering */}
             <button
               type="button"
-              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 dark:text-white focus:outline-none bg-slate-200 dark:bg-zinc-900 rounded-full border-2 border-gray-400 hover:bg-transparent focus:z-10 hover:border-2 hover:border-background focus:bg-transparent focus:border-background dark:border-background dark:focus:text-black dark:focus:bg-white focus:text-textcolor"
+              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 bg-slate-200 rounded-full border-2 border-gray-400 hover:bg-transparent focus:z-10 hover:border-background focus:bg-transparent focus:border-background focus:text-textcolor"
               onClick={() => setApiData(cardData)}
             >
               All
@@ -65,7 +62,7 @@ export default function Page4() {
 
             <button
               type="button"
-              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 dark:text-white focus:outline-none bg-slate-200 dark:bg-zinc-900 rounded-full border-2 border-gray-400 hover:bg-transparent focus:z-10 hover:border-2 hover:border-background focus:bg-transparent focus:border-background dark:border-background dark:focus:text-black dark:focus:bg-white focus:text-textcolor"
+              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 bg-slate-200 rounded-full border-2 border-gray-400 hover:bg-transparent focus:z-10 hover:border-background focus:bg-transparent focus:border-background focus:text-textcolor"
               onClick={() => filterItem("engineering")}
             >
               Engineering
@@ -73,7 +70,7 @@ export default function Page4() {
 
             <button
               type="button"
-              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 dark:text-white focus:outline-none bg-slate-200 dark:bg-zinc-900 rounded-full border-2 border-gray-400 hover:bg-transparent focus:z-10 hover:border-2 hover:border-background focus:bg-transparent focus:border-background dark:border-background dark:focus:text-black dark:focus:bg-white focus:text-textcolor"
+              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 bg-slate-200 rounded-full border-2 border-gray-400 hover:bg-transparent focus:z-10 hover:border-background focus:bg-transparent focus:border-background focus:text-textcolor"
               onClick={() => filterItem("science")}
             >
               Science
@@ -81,7 +78,7 @@ export default function Page4() {
 
             <button
               type="button"
-              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 dark:text-white focus:outline-none bg-slate-200 dark:bg-zinc-900 rounded-full border-2 border-gray-400 hover:bg-transparent focus:z-10 hover:border-2 hover:border-background focus:bg-transparent focus:border-background dark:border-background dark:focus:text-black dark:focus:bg-white focus:text-textcolor"
+              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 bg-slate-200 rounded-full border-2 border-gray-400 hover:bg-transparent focus:z-10 hover:border-background focus:bg-transparent focus:border-background focus:text-textcolor"
               onClick={() => filterItem("management")}
             >
               Management
@@ -89,7 +86,7 @@ export default function Page4() {
 
             <button
               type="button"
-              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 dark:text-white focus:outline-none bg-slate-200 dark:bg-zinc-900 rounded-full border-2 border-gray-400 hover:bg-transparent focus:z-10 hover:border-2 hover:border-background focus:bg-transparent focus:border-background dark:border-background dark:focus:text-black dark:focus:bg-white focus:text-textcolor"
+              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 bg-slate-200 rounded-full border-2 border-gray-400 hover:bg-transparent focus:z-10 hover:border-background focus:bg-transparent focus:border-background focus:text-textcolor"
               onClick={() => filterItem("Design")}
             >
               Design
@@ -127,21 +124,21 @@ export default function Page4() {
               <div
                 key={id} // Assuming title is unique, replace with a unique identifier if available
                 data-aos="fade-up"
-                className="rounded-lg p-4 max-w-[300px] dark:bg-zinc-800 hover:bg-slate-200 dark:hover:bg-background hover:no-underline active:rounded transform transition duration-150 border border-outline-variant item-center justify-center hover:scale-105 cursor-pointer overflow-hidden border-gray-400 hover:text-white"
+                className="rounded-lg p-4 max-w-[300px] bg-slate-200 hover:bg-slate-300 hover:no-underline active:rounded transform transition duration-150 border border-outline-variant item-center justify-center hover:scale-105 cursor-pointer overflow-hidden border-gray-400 hover:text-white"
               >
                 <Link to={`/Courses/${slug}`}>
                   <img
-                    className=" h-[150px] w-full   object-cover   rounded-lg "
+                    className="h-[150px] w-full object-cover rounded-lg"
                     src={img}
                     alt=""
                   />
                 </Link>
 
-                <div className="pt-2 text-black dark:text-white font-semibold">
+                <div className="pt-2 text-black font-semibold">
                   <h1>{title}</h1>
                 </div>
 
-                <div className="py-3 justify-between relative flex text-textcolor dark:text-white">
+                <div className="py-3 justify-between relative flex text-gray-700">
                   <span>{name}</span>
                   <span className="absolute right-[75px] top-[12px]">
                     {timeicon}
@@ -151,7 +148,7 @@ export default function Page4() {
 
                 <div className="p-2 justify-start gap-5 font-semibold text-2xl text-blue-900 flex">
                   <h1>{price}</h1>
-                  <h1 className="line-through text-black dark:text-white font-semibold text-lg">
+                  <h1 className="line-through text-gray-700 font-semibold text-lg">
                     {maxprice}
                   </h1>
                 </div>
