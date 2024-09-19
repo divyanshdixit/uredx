@@ -48,8 +48,8 @@ import Addvideo from "./Components/Unpadh/Teacherdashbrd/TrecordedClasses/Addvid
 import Contact from "./Components/Unpadh/ContactPage/Contact";
 import Coursedetails from "./Components/Unpadh/AdminDashboard/CourseManagement/Coursedetails";
 import Addcourse from "./Components/Unpadh/AdminDashboard/CourseManagement/Addcourse";
-import { courses } from "./Components/Unpadh/AdminDashboard/CourseManagement/CourseApi";
-import { option } from "./Components/Unpadh/AdminDashboard/CourseManagement/OptionforfilterAPI";
+// import { courses } from "./Components/Unpadh/AdminDashboard/CourseManagement/CourseApi";
+// import { option } from "./Components/Unpadh/AdminDashboard/CourseManagement/Optionforfilters API";
 import TeacherList from "./Components/Unpadh/AdminDashboard/TeacherManagement/TeacherList";
 import { teacherlistdata } from "./Components/Unpadh/AdminDashboard/TeacherManagement/TeacherListAPI";
 import DetailsOfTeacher from "./Components/Unpadh/AdminDashboard/TeacherManagement/DetailsOfTeacher";
@@ -189,7 +189,7 @@ function App() {
             <Route path="" element={<Addcourse />} />
             <Route
               path="admn-course-details"
-              element={<Coursedetails courses={courses} option={option} />}
+              element={<Coursedetails/>}
             />
 
             {/* .....................Teacher management routing............ */}
