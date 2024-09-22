@@ -22,7 +22,7 @@ let myemail;
 let OTP;
 
 const app = express();
-const PORT = 8000;
+const PORT = 8001;
 
 const corsOptions = {
   origin: "http://127.0.0.1:5173",

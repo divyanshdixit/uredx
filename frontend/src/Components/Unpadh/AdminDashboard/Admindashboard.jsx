@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -6,6 +6,8 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link, Outlet } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { setData, setLoading } from "../../../redux/example/exampleSlice";
 
 const data = [
   {
@@ -56,11 +58,19 @@ const data = [
 ];
 
 function AccordionList() {
+  const dispatch = useDispatch();
+  const {loading, data} = useSelector(state => state.example);
+  console.log(loading, data); // to read the value of state
   const [dashboardSidebar, setDashboardSidebar] = useState(false);
 
   const handleDashboardSidebar = (open) => {
     setDashboardSidebar(open);
   };
+
+  useEffect(() => {
+    dispatch(setLoading(true));
+    dispatch(setData(['data1', 'data2', 'data3']))
+  }, [dispatch])
 
   return (
     <div className="grid lg:grid-cols-5 gap-[10px] p-[10px]">
