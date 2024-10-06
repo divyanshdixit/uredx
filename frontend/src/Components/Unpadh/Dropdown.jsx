@@ -54,7 +54,7 @@ export default function Dropdown() {
             </div>
           </div>
           {activeCategory === category.title && (
-            <div className="w-[100%] lg:w-[280px] border-b-[2px] border-[white] lg:bg-[#fefefe] px-[4px] lg:border-l-[#d7d7d7] lg:border-l-[1px] lg:absolute lg:top-[0] lg:left-[250px] z-10">
+            <div className="w-[100%] lg:w-[280px] border-b-[2px] border-[white] lg:bg-[#fefefe] px-[4px] lg:border-l-[#d7d7d7] lg:border-l-[1px] lg:absolute lg:top-[25px] lg:left-[250px] z-10">
               {category.content}
             </div>
           )}
