@@ -28,24 +28,5 @@
   .privacysetting_btn {
     width: 91%;
     margin-top: 2rem;
-
-    button {
-      width: 15%;
-      height: 2.5rem;
-      border: none;
-      border-radius: 2px;
-      background: rgba(0, 0, 0, 0.709);
-      transition: 0.4s;
-
-      #privacysetting_link {
-        text-decoration: none;
-        font-size: 1.2rem;
-        color: white;
-        font-weight: 500;
-      }
-    }
-    button:hover {
-      background: #39a992;
-    }
   }
 }

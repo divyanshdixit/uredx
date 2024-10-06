@@ -38,13 +38,8 @@ export default function UredxProfile() {
             </p>
           </div>
           <div className="uredx_profile_row6">
-            <button>
-              <NavLink
-                to="/teacherdashboard/Edit_profile/profile_picture"
-                id="uredx_profile_link"
-              >
+            <button className="site_btn">
                 Save
-              </NavLink>
             </button>
           </div>
         </div>

@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Payout_taxDetails() {
+const Payout_taxDetails = () => {
   return (
-    <div>Payout&taxDetails</div>
+    <div>Payout_taxDetails</div>
   )
 }
+
+export default Payout_taxDetails

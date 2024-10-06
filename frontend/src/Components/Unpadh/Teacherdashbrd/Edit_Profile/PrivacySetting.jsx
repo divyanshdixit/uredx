@@ -15,8 +15,8 @@ export default function PrivacySetting() {
           <p>Show courses you're taking on your profile page</p>
         </div>
         <div className="privacysetting_btn">
-          <button>
-            <NavLink id="privacysetting_link">Save</NavLink>
+          <button className="site_btn">
+           Save 
           </button>
         </div>
       </div>

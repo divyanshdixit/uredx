@@ -32,12 +32,8 @@ export default function ProfilePicture() {
           <input type="file" onChange={handlePicupload} accept="image/*" />
         </div>
         <div className="profile_pic_btn_div">
-          <button className="profile_pic_btn">
-            <NavLink
-              to="/teacherdashboard/Edit_profile/privacy_setting"
-              id="profile_pic_link">
+          <button className="site_btn">
               Save and Continue
-            </NavLink>
           </button>
         </div>
       </div>

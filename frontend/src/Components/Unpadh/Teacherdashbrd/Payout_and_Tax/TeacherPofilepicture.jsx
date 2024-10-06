@@ -32,13 +32,8 @@ export default function TeacherPofilepicture() {
           <input type="file" onChange={handlePicupload} accept="image/*" />
         </div>
         <div className="profile_pic_btn_div">
-          <button className="profile_pic_btn">
-            <NavLink
-              to="/teacherdashboard/Teacher_payout_and_tax/instructor_terms"
-              id="profile_pic_link"
-            >
-              Save and Continue
-            </NavLink>
+          <button className="site_btn">         
+              Save and Continue       
           </button>
         </div>
       </div>

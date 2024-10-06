@@ -1,9 +1,9 @@
 .Instructorterms_container {
   width: 97%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
   margin-top: 2rem;
 
   .terms_wrapper {
@@ -43,28 +43,6 @@
     .Instructorterms_btn_div {
       width: 100%;
       margin-top: 2.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .Instructorterms_btn {
-        width: 35%;
-        height: 2.5rem;
-        border: none;
-        border-radius: 5px;
-        background: rgba(0, 0, 0, 0.754);
-        transition: 0.4s;
-
-        #Instructorterms_btn_link {
-          text-decoration: none;
-          color: white;
-          font-weight: 500;
-          font-size: 1.1rem;
-        }
-      }
-      .Instructorterms_btn:hover {
-        background: #2b7f6e;
-      }
     }
   }
 }

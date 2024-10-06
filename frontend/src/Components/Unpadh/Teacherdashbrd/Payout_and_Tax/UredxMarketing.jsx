@@ -71,13 +71,8 @@ export default function UredxMarketing() {
             participation.
           </i>
           <div className="UredxMarketing_btn_div">
-            <button className="UredxMarketing_btn">
-              <NavLink
-                to="/teacherdashboard/Teacher_payout_and_tax/Payout_tax_Details"
-                id="UredxMarketing_btn_link"
-              >
+            <button className="site_btn">
                 Save and Continue
-              </NavLink>
             </button>
           </div>
         </div>

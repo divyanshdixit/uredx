@@ -21,13 +21,8 @@ export default function InstructorTems() {
             <p>I have read and agree to the Uredx Instructor Terms</p>
           </div>
           <div className="Instructorterms_btn_div">
-            <button className="Instructorterms_btn">
-              <NavLink
-                to="/teacherdashboard/Teacher_payout_and_tax/Uredx_Marketing"
-                id="Instructorterms_btn_link"
-              >
+            <button className="site_btn">           
                 Save and Continue
-              </NavLink>
             </button>
           </div>
         </div>
