@@ -134,53 +134,9 @@ function App() {
             <Route path="publicprofile" element={<Publicprofle />} />
             <Route path="editprofile" element={<Editprofile />} />
           </Route>
-          {/* // ..................Students Dashboard Routing End............. // */}
-
-          {/* ..................Teacher Dashboard Routing start........ */}
-          {/* <Route path="/addpage" element={<Addpage />} />
-          <Route path="/upload_video/:id" element={<Addvideo />} /> */}
-          <Route path="/teacherdashboard/" element={<Teacherdashboard />}>
-            ....................Teacher Recorded class area..............
-            {/* <Route
-              path=""
-              element={<TeacherRecordedclass createfolder={createfolder} />}
-            /> */}
-            {/* <Route path="teachernotificaton" element={<Tnotification />} /> */}
-            {/* .........Teacher account setting nested routing............. */}
-            {/* <Route path="teacheractsetting" element={<Teacheractsetting />}>
-              <Route path="" element={<Teacheractsecurity />} />
-              <Route
-                path="teacher_notification_setting"
-                element={<TeachernotificSetting />}
-              />
-              <Route
-                path="teacher_message_setting"
-                element={<TeacherMessagestng />}
-              />
-              <Route
-                path="teacher_close_account"
-                element={<TeachercloseAccount />}
-              />
-            </Route> */}
-            {/* ...........Teacher papyout and tax nested routing............ */}
-            {/* <Route path="Teacher_payout_and_tax" element={<TpayoutAndtax />}>
-              <Route path="" element={<TeacherPofilepicture />} />
-              <Route path="instructor_terms" element={<InstructorTems />} />
-              <Route path="Uredx_Marketing" element={<UredxMarketing />} />
-              <Route
-                path="Payout_tax_Details"
-                element={<Payout_taxDetails />}
-              />
-            </Route> */}
-            {/* ....Edit profile nested routing start........  */}
-            {/* <Route path="Edit_profile" element={<ProfileEdit />}>
-              <Route path="" element={<UredxProfile />} />
-              <Route path="profile_picture" element={<ProfilePicture />} />
-              <Route path="privacy_setting" element={<PrivacySetting />} />
-            </Route> */}
-          </Route>
-
-          {/* .........Teacher Dashboard routing End............. */}
+             
+          <Route path="/teacherdashboard/" element={<Teacherdashboard />}/>
+            
 
           {/* //......Admin Routing area Start........... */}
 

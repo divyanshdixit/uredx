@@ -37,7 +37,7 @@ export default function Dropdown() {
   ];
 
   return (
-    <div className="w-[100%] lg:w-[250px] lg:top-[45px] lg:h-[525px] lg:absolute z-10 lg:bg-[white] px-[4px]">
+    <div className="w-[100%] lg:w-[250px] lg:top-[45px] lg:h-[525px] lg:mt-[-20px] lg:absolute z-10 lg:bg-[#ffffff] px-[4px]">
       {categories.map((category, index) => (
         <div className="" key={index}>
           <div

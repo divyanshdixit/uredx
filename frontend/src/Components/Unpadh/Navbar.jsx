@@ -22,9 +22,18 @@ export default function Navbar({ AddCart }) {
     setMobileDropdownVisible(prevstate=>!prevstate)
   };
 
-  const togglePcDropdown = () => {
-    setPcDropdownVisible(prevstate=>!prevstate);   
-  };
+  // const togglePcDropdown = () => {
+  //   setPcDropdownVisible(prevstate=>!prevstate);   
+  // };
+    // New event handlers for hover
+    const handleMouseEnter = () => {
+      setPcDropdownVisible(true);
+    };
+  
+    const handleMouseLeave = () => {
+      setPcDropdownVisible(false);
+    };
+  
 
   const handleRoute = () => {
     navigate("/Dashboard");
@@ -44,8 +53,10 @@ export default function Navbar({ AddCart }) {
 
         {/* Dropdown items in desktop mode */}
         <div className="hidden lg:flex lg:space-x-6">
-          <div className="relative">
-            <Link className="hover:text-[#42a38c]" onClick={togglePcDropdown}>
+          <div className="relative" 
+            onMouseEnter={handleMouseEnter} 
+            onMouseLeave={handleMouseLeave}>
+            <Link className="hover:text-[#42a38c]">
               Programs
             </Link>
             {PcDropdownVisible && <Dropdown/>}
